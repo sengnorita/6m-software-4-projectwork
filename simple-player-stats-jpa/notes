@@ -1,0 +1,5 @@
+Create a new Resource
+- create the Entity / POJO
+- create the Repository
+- create the Service (Interface), Service Implementation
+- create the Controller

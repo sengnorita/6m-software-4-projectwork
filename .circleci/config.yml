@@ -3,7 +3,7 @@ orbs:
   node: circleci/maven@1.4.1
   docker: circleci/docker@2.1.4
   # heroku: circleci/heroku@2.0.0
-  # snyk: snyk/snyk@1.5.0
+  snyk: snyk/snyk@1.5.0
 
 jobs:
   build:
@@ -38,18 +38,18 @@ jobs:
           image: alf1650/software-4-projectwork
           tag: <<pipeline.git.tag>>
 
-  # scan:
-  #   docker: 
-  #     - image: cimg/node:16.10
-  #   environment:
-  #     IMAGE_NAME: alf1650/education-space
-  #   steps: 
-  #     - checkout
-  #     - setup_remote_docker
-  #     - docker/check
-  #     - run: docker build -t $IMAGE_NAME .
-  #     - snyk/scan: 
-  #       docker-image-name: $IMAGE_NAME
+  scan:
+    docker: 
+      - image: cimg/openjdk:17.0.8
+    environment:
+      IMAGE_NAME: alf1650/software-4-projectwork
+    steps: 
+      - checkout
+      - setup_remote_docker
+      - docker/check
+      - run: docker build -t $IMAGE_NAME .
+      - snyk/scan: 
+        docker-image-name: $IMAGE_NAME
 
   # deploy:
   #   docker:

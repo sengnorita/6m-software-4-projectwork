@@ -23,7 +23,7 @@ jobs:
       - checkout
       - run: |
           echo "Running tests..."
-          mvn clean
+          mvn test
 
     # docker-deploy:
     # docker:

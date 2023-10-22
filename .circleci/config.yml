@@ -16,6 +16,8 @@ jobs:
       - run: |
           echo "Echo java versiong"
           java --version
+          node --verison
+          
   # test:
   #   docker:
   #     - image: cimg/node:16.10

@@ -48,7 +48,7 @@ jobs:
       - setup_remote_docker
       - docker/check
       - run: docker build -t $IMAGE_NAME .
-        - snyk/scan: 
+      - snyk/scan: 
           docker-image-name: $IMAGE_NAME
           allow_failure: true
       # - run:

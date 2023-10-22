@@ -50,7 +50,16 @@ jobs:
       - run: docker build -t $IMAGE_NAME .
       - snyk/scan: 
           docker-image-name: $IMAGE_NAME
-            allow_failure: true
+          format: JSON
+          severity-threshold: low  # Adjust the severity threshold as needed
+      - run:
+          name: Check Snyk Scan Results
+          command: |
+            if [ -s .snyk ]; then
+              cat .snyk
+            else
+              echo "No vulnerabilities found in Snyk scan."
+            fi
       # - run:
       #     name: Run Snyk Scan
       #     command: |

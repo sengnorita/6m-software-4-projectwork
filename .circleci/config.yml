@@ -51,7 +51,7 @@ jobs:
       - snyk/scan: 
           docker-image-name: $IMAGE_NAME
           # format: JSON
-          severity-threshold: high  # Adjust the severity threshold as needed
+          severity-threshold: high  # Adjust the severity threshold as needed 
       # - run:
       #     name: Check Snyk Scan Results
       #     command: |

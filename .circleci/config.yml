@@ -25,22 +25,6 @@ jobs:
           name: Test Maven Project 
           command: mvn test
 
-    # docker-deploy:
-    # docker:
-    #   - image: docker:20.10.8
-    
-    # steps:
-    #   - checkout
-    #   - setup_remote_docker:
-    #       version: 20.10.8
-    #   - run:
-    #       name: Build and Push Docker Image
-    #       command: |
-    #         docker build -t my-java-app:latest .
-    #         docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-    #         docker tag my-java-app:latest your-docker-registry/my-java-app:latest
-    #         docker push your-docker-registry/my-java-app:latest
-
   build-and-push:
     executor: docker/docker
     steps:
@@ -53,28 +37,7 @@ jobs:
       - docker/push:
           image: alf1650/software-4-projectwork
           tag: <<pipeline.git.tag>>
-  # test:
-  #   docker:
-  #     - image: cimg/node:16.10
-  #   steps:
-  #     - checkout
-  #     - node/install-packages:
-  #         pkg-manager: npm
-  #     - run: |
-  #         echo "Running tests..."
-  #         npm run test
-  # build-and-push:
-  #   executor: docker/docker
-  #   steps:
-  #     - setup_remote_docker
-  #     - checkout
-  #     - docker/check
-  #     - docker/build:
-  #         image: alf1650/education-space
-  #         tag: <<pipeline.git.tag>>
-  #     - docker/push:
-  #         image: alf1650/education-space
-  #         tag: <<pipeline.git.tag>>
+
   # scan:
   #   docker: 
   #     - image: cimg/node:16.10
@@ -103,15 +66,24 @@ jobs:
   #           heroku container:release web -a alf1650
 
 workflows:
-  simple_workflow:
+  ci_flow:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only: develop
       - test:
           requires:
             - build
+          filters:
+            branches:
+              only: develop
       - build-and-push:
           requires:
             - test
+          filters:
+            branches:
+              only: develop
 #       # - deploy:
 #       #     requires:
 #       #       - build-and-push

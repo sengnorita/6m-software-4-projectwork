@@ -21,9 +21,9 @@ jobs:
       - image: cimg/openjdk:17.0.8
     steps:
       - checkout
-      - run: |
-          echo "Running mvn test"
-          mvn test
+      - run:
+          name: Test Maven Project 
+          command: mvn test
 
     # docker-deploy:
     # docker:

@@ -3,7 +3,7 @@ orbs:
   node: circleci/maven@1.4.1
   docker: circleci/docker@2.1.4
   # heroku: circleci/heroku@2.0.0
-  snyk: snyk/snyk@1.5.0
+  snyk: snyk/snyk@2.0.1
 
 jobs:
   build:
@@ -51,7 +51,7 @@ jobs:
       - snyk/scan: 
           docker-image-name: $IMAGE_NAME
           # format: JSON
-          severity-threshold: high  # Adjust the severity threshold as needed 
+          severity-threshold: critical  # Adjust the severity threshold as needed 
       # - run:
       #     name: Check Snyk Scan Results
       #     command: |

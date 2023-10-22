@@ -9,23 +9,13 @@ jobs:
   build:
     docker:
       - image: cimg/openjdk:17.0.8
-    
-    # working_directory:  simple-player-stats-jpa
-
     steps:
       - checkout
-      # - node/install-packages:
-      #     pkg-manager: npm
-      # - run: |
-      #     echo "Echo java versiong"
-      #     java --version
-      #     echo "Attempting to build"
-      #     mvn install
       - run:
           name: Build Maven Project
           command: mvn install
 
-  docker-deploy:
+    docker-deploy:
     docker:
       - image: docker:20.10.8
     

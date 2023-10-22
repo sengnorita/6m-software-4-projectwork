@@ -10,7 +10,7 @@ jobs:
     docker:
       - image: cimg/openjdk:17.0.8
     
-    working_directory: ~/simple-player-stats-jpa
+    working_directory: simple-player-stats-jpa
 
     steps:
       - checkout

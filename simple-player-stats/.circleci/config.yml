@@ -20,7 +20,7 @@ jobs:
           echo "Echo java versiong"
           java --version
           echo "Attempting to build"
-          mvn clean
+          mvn install
 
   # test:
   #   docker:

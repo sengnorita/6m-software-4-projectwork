@@ -1,0 +1,110 @@
+version: 2.1
+orbs:
+  node: circleci/maven@1.4.1
+  docker: circleci/docker@2.1.4
+  # heroku: circleci/heroku@2.0.0
+  # snyk: snyk/snyk@1.5.0
+
+jobs:
+  build:
+    docker:
+      - image: cimg/openjdk:17.0.8
+    
+    # working_directory:  simple-player-stats-jpa
+
+    steps:
+      - checkout
+      # - node/install-packages:
+      #     pkg-manager: npm
+      - run: |
+          echo "Echo java versiong"
+          java --version
+          echo "Attempting to build"
+          mvn clean install
+
+  # test:
+  #   docker:
+  #     - image: cimg/node:16.10
+  #   steps:
+  #     - checkout
+  #     - node/install-packages:
+  #         pkg-manager: npm
+  #     - run: |
+  #         echo "Running tests..."
+  #         npm run test
+  # build-and-push:
+  #   executor: docker/docker
+  #   steps:
+  #     - setup_remote_docker
+  #     - checkout
+  #     - docker/check
+  #     - docker/build:
+  #         image: alf1650/education-space
+  #         tag: <<pipeline.git.tag>>
+  #     - docker/push:
+  #         image: alf1650/education-space
+  #         tag: <<pipeline.git.tag>>
+  # scan:
+  #   docker: 
+  #     - image: cimg/node:16.10
+  #   environment:
+  #     IMAGE_NAME: alf1650/education-space
+  #   steps: 
+  #     - checkout
+  #     - setup_remote_docker
+  #     - docker/check
+  #     - run: docker build -t $IMAGE_NAME .
+  #     - snyk/scan: 
+  #       docker-image-name: $IMAGE_NAME
+
+  # deploy:
+  #   docker:
+  #     - image:  cimg/node:16.10
+  #   steps:
+  #     - setup_remote_docker
+  #     - heroku/install
+  #     - checkout
+  #     - run:
+  #         name: Heroku Container Push
+  #         command: |
+  #           heroku container:login
+  #           heroku container:push web -a alf1650
+  #           heroku container:release web -a alf1650
+
+# workflows:
+#   simple_workflow:
+#     jobs:
+#       - build
+#       - test:
+#           requires:
+#             - build
+#       - build-and-push:
+#           requires:
+#             - test
+#       # - deploy:
+#       #     requires:
+#       #       - build-and-push
+#       - scan:
+#           requires:
+#             - build
+
+
+# workflows: 
+#   simple_workflow:
+#     jobs:
+#       - build:
+#           filters:
+#             branches:
+#               only: main
+#       - test:  
+#           requires:
+#             - build
+#           filters:
+#             branches:
+#               only: main
+#       - build-and-push: #This should run only if a tag is pushed, not if a branch is pushed
+#           filters:
+#             tags:
+#               only: /^v.*/ #only considers tags starting with v (ex. v1.0.2)
+#             branches:
+#               ignore: /.*/ #ignores all branches

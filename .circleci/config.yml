@@ -9,6 +9,9 @@ jobs:
   build:
     docker:
       - image: cimg/openjdk:17.0.8
+    
+    working_directory: ~/simple-player-stats-jpa
+
     steps:
       - checkout
       # - node/install-packages:
@@ -16,8 +19,9 @@ jobs:
       - run: |
           echo "Echo java versiong"
           java --version
-          node --verison
-          
+          echo "Attempting to build"
+          mvn clean spring-boot:run
+
   # test:
   #   docker:
   #     - image: cimg/node:16.10

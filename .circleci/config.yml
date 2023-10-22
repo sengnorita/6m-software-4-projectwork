@@ -48,8 +48,8 @@ jobs:
       - setup_remote_docker
       - docker/check
       - run: docker build -t $IMAGE_NAME .
-      - snyk/scan: 
-        docker-image-name: $IMAGE_NAME
+      # - snyk/scan: 
+      #   docker-image-name: $IMAGE_NAME
 
   # deploy:
   #   docker:

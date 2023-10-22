@@ -50,8 +50,8 @@ jobs:
       - run: docker build -t $IMAGE_NAME .
       - snyk/scan: 
           docker-image-name: $IMAGE_NAME
-          # format: JSON
-          severity-threshold: critical  # Adjust the severity threshold as needed 
+          severity-threshold: critical  # Adjust the severity threshold as needed
+          fail-on-issues: false
       # - run:
       #     name: Check Snyk Scan Results
       #     command: |

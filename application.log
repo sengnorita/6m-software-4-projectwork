@@ -3294,3 +3294,302 @@ This generated password is for development use only. Your security configuration
 2023-10-22 23:28:43.149 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-10-22 23:28:43.150 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
 2023-10-22 23:28:43.150 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2023-10-22 23:34:07.397 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-10-22 23:34:07.399 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - Starting SimplePlayerStatsApplication using Java 17.0.8 on Alfreds-Mini with PID 36711 (/Users/alfredlim/sctp/6m-software-4-projectwork/target/classes started by alfredlim in /Users/alfredlim/sctp/6m-software-4-projectwork)
+2023-10-22 23:34:07.399 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-22 23:34:07.417 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-22 23:34:07.417 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-22 23:34:07.676 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-22 23:34:07.691 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-10-22 23:34:07.919 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-22 23:34:07.921 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-22 23:34:07.922 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-22 23:34:07.922 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-22 23:34:07.948 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-22 23:34:07.948 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 531 ms
+2023-10-22 23:34:07.959 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-22 23:34:08.019 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-22 23:34:08.023 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:playerstat'
+2023-10-22 23:34:08.063 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-22 23:34:08.080 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-22 23:34:08.126 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-22 23:34:08.160 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-10-22 23:34:08.366 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-22 23:34:08.369 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-22 23:34:08.606 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-22 23:34:08.675 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 08ae3eb9-ef30-469d-b8c8-9dd19cd0f548
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-10-22 23:34:08.716 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c85aaaa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3081083b, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a212951, org.springframework.security.web.header.HeaderWriterFilter@737fbab8, org.springframework.security.web.authentication.logout.LogoutFilter@7145dd28, sg.ntu.edu.simpleplayerstats.security.AuthenticationFilter@72e98371, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@26e55dbc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cd4a69e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38c5551c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e909a4e, org.springframework.security.web.session.SessionManagementFilter@3f3489f8, org.springframework.security.web.access.ExceptionTranslationFilter@232e5180, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b40709a]
+2023-10-22 23:34:08.763 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-22 23:34:08.828 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-22 23:34:08.843 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-22 23:34:08.940 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - Started SimplePlayerStatsApplication in 1.648 seconds (JVM running for 1.833)
+2023-10-22 23:34:27.389 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 28 class path changes (0 additions, 28 deletions, 0 modifications)
+2023-10-22 23:34:27.396 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-10-22 23:34:27.396 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-22 23:34:27.397 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-10-22 23:34:27.399 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-10-22 23:34:27.402 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-22 23:34:27.605 [Thread-5] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-22 23:34:27.605 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-22 23:34:27.606 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-22 23:41:18.867 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - Starting SimplePlayerStatsApplication using Java 17.0.8 on Alfreds-Mini with PID 37870 (/Users/alfredlim/sctp/6m-software-4-projectwork/target/classes started by alfredlim in /Users/alfredlim/sctp/6m-software-4-projectwork)
+2023-10-22 23:41:18.867 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-10-22 23:41:18.868 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-22 23:41:18.886 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-22 23:41:18.886 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-22 23:41:19.179 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-22 23:41:19.196 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2023-10-22 23:41:19.435 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-22 23:41:19.437 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-22 23:41:19.438 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-22 23:41:19.438 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-22 23:41:19.462 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-22 23:41:19.462 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 576 ms
+2023-10-22 23:41:19.474 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-22 23:41:19.540 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-22 23:41:19.544 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:playerstat'
+2023-10-22 23:41:19.595 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-22 23:41:19.617 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-22 23:41:19.670 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-22 23:41:19.709 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-10-22 23:41:19.925 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-22 23:41:19.927 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-22 23:41:20.164 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-22 23:41:20.233 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 908b3561-5266-4840-bf52-4427db6e6682
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-10-22 23:41:20.274 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@16675183, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@616485da, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f3e77d9, org.springframework.security.web.header.HeaderWriterFilter@32eb98f0, org.springframework.security.web.authentication.logout.LogoutFilter@332ea747, sg.ntu.edu.simpleplayerstats.security.AuthenticationFilter@4c9d18b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5fa51a37, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43a43975, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@185d3042, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@768b0b74, org.springframework.security.web.session.SessionManagementFilter@60c69f84, org.springframework.security.web.access.ExceptionTranslationFilter@4f1730ec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3cb74482]
+2023-10-22 23:41:20.316 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-22 23:41:20.379 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-22 23:41:20.385 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-22 23:41:20.475 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - Started SimplePlayerStatsApplication in 1.729 seconds (JVM running for 1.929)
+2023-10-22 23:41:26.407 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-22 23:41:26.710 [HikariPool-1 connection adder] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240)
+	at org.h2.engine.SessionLocal.isOpen(SessionLocal.java:1173)
+	at org.h2.engine.SessionLocal.waitIfExclusiveModeEnabled(SessionLocal.java:1486)
+	at org.h2.command.Command.executeQuery(Command.java:180)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-10-22 23:41:26.802 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-22 23:41:26.803 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-22 23:41:26.969 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-22 23:41:36.191 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-10-22 23:41:36.193 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - Starting SimplePlayerStatsApplication using Java 17.0.8 on Alfreds-Mini with PID 38064 (/Users/alfredlim/sctp/6m-software-4-projectwork/target/classes started by alfredlim in /Users/alfredlim/sctp/6m-software-4-projectwork)
+2023-10-22 23:41:36.193 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-22 23:41:36.211 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-22 23:41:36.211 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-22 23:41:36.507 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-22 23:41:36.527 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2023-10-22 23:41:36.789 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-22 23:41:36.792 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-22 23:41:36.793 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-22 23:41:36.793 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-22 23:41:36.820 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-22 23:41:36.820 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 608 ms
+2023-10-22 23:41:36.831 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-22 23:41:36.895 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-22 23:41:36.899 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:playerstat'
+2023-10-22 23:41:36.946 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-22 23:41:36.964 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-22 23:41:37.022 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-22 23:41:37.060 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-10-22 23:41:37.290 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-22 23:41:37.293 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-22 23:41:37.551 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-22 23:41:37.629 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e94b4b2f-af47-4874-9ed7-50c0b7f283b9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-10-22 23:41:37.678 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ee7bf91, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4eb9e91e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c6fa91a, org.springframework.security.web.header.HeaderWriterFilter@6deb37ae, org.springframework.security.web.authentication.logout.LogoutFilter@73a25460, sg.ntu.edu.simpleplayerstats.security.AuthenticationFilter@1cc15413, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5052199a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e590d20, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21c3c06e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@329d9a9c, org.springframework.security.web.session.SessionManagementFilter@1de49711, org.springframework.security.web.access.ExceptionTranslationFilter@477467bb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75ec6b5c]
+2023-10-22 23:41:37.725 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-22 23:41:37.793 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-22 23:41:37.800 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-22 23:41:37.904 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - Started SimplePlayerStatsApplication in 1.827 seconds (JVM running for 2.032)
+2023-10-22 23:41:40.966 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-22 23:41:41.157 [HikariPool-1 connection adder] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240)
+	at org.h2.engine.SessionLocal.transitionToState(SessionLocal.java:1232)
+	at org.h2.engine.SessionLocal.setCurrentCommand(SessionLocal.java:1210)
+	at org.h2.engine.SessionLocal.startStatementWithinTransaction(SessionLocal.java:1658)
+	at org.h2.command.Command.executeQuery(Command.java:184)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-10-22 23:41:41.359 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-22 23:41:41.359 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-22 23:41:41.415 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-22 23:41:49.423 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [sg.ntu.edu.simpleplayerstats.PlayerServiceImplTest], using SpringBootContextLoader
+2023-10-22 23:41:49.425 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [sg.ntu.edu.simpleplayerstats.PlayerServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-10-22 23:41:49.425 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [sg.ntu.edu.simpleplayerstats.PlayerServiceImplTest]: PlayerServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-10-22 23:41:49.458 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration sg.ntu.edu.simpleplayerstats.SimplePlayerStatsApplication for test class sg.ntu.edu.simpleplayerstats.PlayerServiceImplTest
+2023-10-22 23:41:49.486 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-10-22 23:41:49.491 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@27a5328c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e5f4170, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6c345c5f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6b5966e1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@65e61854, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1568159, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4fcee388, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6f80fafe, org.springframework.test.context.event.EventPublishingTestExecutionListener@3af17be2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@f9879ac, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@37f21974, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f4d427e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6e521c1e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@224b4d61, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5d5d9e5]
+2023-10-22 23:41:49.508 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2023-10-22 23:41:49.588 [main] INFO  s.n.e.s.PlayerServiceImplTest - Starting PlayerServiceImplTest using Java 17.0.8 on Alfreds-Mini with PID 38198 (started by alfredlim in /Users/alfredlim/sctp/6m-software-4-projectwork)
+2023-10-22 23:41:49.588 [main] INFO  s.n.e.s.PlayerServiceImplTest - No active profile set, falling back to 1 default profile: "default"
+2023-10-22 23:41:49.590 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-10-22 23:41:49.864 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-22 23:41:49.881 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2023-10-22 23:41:50.108 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-22 23:41:50.125 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-22 23:41:50.176 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-22 23:41:50.213 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-22 23:41:50.278 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-22 23:41:50.287 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-10-22 23:41:50.511 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-22 23:41:50.514 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-22 23:41:50.802 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-22 23:41:50.831 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:playerstat'
+2023-10-22 23:41:50.913 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: aba5bf6b-5cd1-461a-8069-05dabcb4f1cc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-10-22 23:41:50.969 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7322013f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a744e32, org.springframework.security.web.context.SecurityContextPersistenceFilter@5edd2170, org.springframework.security.web.header.HeaderWriterFilter@21dbd651, org.springframework.security.web.authentication.logout.LogoutFilter@4b8466c2, sg.ntu.edu.simpleplayerstats.security.AuthenticationFilter@18487f92, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7375ebe7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b61a4b0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c00de0d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@252f00ba, org.springframework.security.web.session.SessionManagementFilter@5aff8207, org.springframework.security.web.access.ExceptionTranslationFilter@66c88fce, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@193710c3]
+2023-10-22 23:41:51.258 [main] INFO  s.n.e.s.PlayerServiceImplTest - Started PlayerServiceImplTest in 1.752 seconds (JVM running for 2.11)
+2023-10-22 23:41:51.370 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [sg.ntu.edu.simpleplayerstats.SimplePlayerStatsApplicationTests], using SpringBootContextLoader
+2023-10-22 23:41:51.370 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [sg.ntu.edu.simpleplayerstats.SimplePlayerStatsApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-10-22 23:41:51.370 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [sg.ntu.edu.simpleplayerstats.SimplePlayerStatsApplicationTests]: SimplePlayerStatsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-10-22 23:41:51.371 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration sg.ntu.edu.simpleplayerstats.SimplePlayerStatsApplication for test class sg.ntu.edu.simpleplayerstats.SimplePlayerStatsApplicationTests
+2023-10-22 23:41:51.371 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-10-22 23:41:51.371 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@645a9649, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4723445c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7631fb3e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3aede2ff, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ab5c335, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5769679b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2ef89e43, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7bd76b79, org.springframework.test.context.event.EventPublishingTestExecutionListener@5fdfa35d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@43165282, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2976d625, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@693afcd1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4bdd6fe0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3aaeb65b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@25f688d5]
+2023-10-22 23:41:51.374 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [sg.ntu.edu.simpleplayerstats.PlayerControllerTest], using SpringBootContextLoader
+2023-10-22 23:41:51.374 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [sg.ntu.edu.simpleplayerstats.PlayerControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-10-22 23:41:51.374 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [sg.ntu.edu.simpleplayerstats.PlayerControllerTest]: PlayerControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-10-22 23:41:51.378 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration sg.ntu.edu.simpleplayerstats.SimplePlayerStatsApplication for test class sg.ntu.edu.simpleplayerstats.PlayerControllerTest
+2023-10-22 23:41:51.378 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-10-22 23:41:51.379 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5135b8a3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ef12d7e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@375376d5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7dd3f20e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1dfadb7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4602fa2f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6a4bd9e4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@8ea1521, org.springframework.test.context.event.EventPublishingTestExecutionListener@7424a39e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2526ecb7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1196950e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@490dc900, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@18e4bbec, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@ab5af13, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2f2e75ae]
+2023-10-22 23:41:51.379 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2023-10-22 23:41:51.387 [main] INFO  s.n.e.s.PlayerControllerTest - Starting PlayerControllerTest using Java 17.0.8 on Alfreds-Mini with PID 38198 (started by alfredlim in /Users/alfredlim/sctp/6m-software-4-projectwork)
+2023-10-22 23:41:51.387 [main] INFO  s.n.e.s.PlayerControllerTest - No active profile set, falling back to 1 default profile: "default"
+2023-10-22 23:41:51.467 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-22 23:41:51.470 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2023-10-22 23:41:51.513 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-22 23:41:51.515 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2023-10-22 23:41:51.516 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2023-10-22 23:41:51.516 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-10-22 23:41:51.534 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-22 23:41:51.534 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-22 23:41:51.604 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-22 23:41:51.615 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:playerstat'
+2023-10-22 23:41:51.648 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f4b9d3ab-b0bd-4103-a0d4-14be0044b4bc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-10-22 23:41:51.663 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7ef3b7ac, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@720da195, org.springframework.security.web.context.SecurityContextPersistenceFilter@5da13494, org.springframework.security.web.header.HeaderWriterFilter@4f8eb97c, org.springframework.security.web.authentication.logout.LogoutFilter@47bc4445, sg.ntu.edu.simpleplayerstats.security.AuthenticationFilter@4dbf902, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@418f3cde, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67d90687, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d260659, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c0a4c8b, org.springframework.security.web.session.SessionManagementFilter@2799f9a, org.springframework.security.web.access.ExceptionTranslationFilter@5a1c0bcc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d9576a0]
+2023-10-22 23:41:51.748 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2023-10-22 23:41:51.748 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2023-10-22 23:41:51.748 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2023-10-22 23:41:51.794 [main] INFO  s.n.e.s.PlayerControllerTest - Started PlayerControllerTest in 0.414 seconds (JVM running for 2.646)
+2023-10-22 23:41:51.888 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-22 23:41:51.889 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-22 23:41:51.890 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-22 23:41:51.892 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-22 23:41:51.892 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2023-10-22 23:41:51.892 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2023-10-22 23:44:47.802 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-10-22 23:44:47.804 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - Starting SimplePlayerStatsApplication using Java 17.0.8 on Alfreds-Mini with PID 38829 (/Users/alfredlim/sctp/6m-software-4-projectwork/target/classes started by alfredlim in /Users/alfredlim/sctp/6m-software-4-projectwork)
+2023-10-22 23:44:47.804 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-22 23:44:47.821 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-22 23:44:47.821 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-22 23:44:48.080 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-22 23:44:48.095 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-10-22 23:44:48.333 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-10-22 23:44:48.336 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-10-22 23:44:48.337 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-22 23:44:48.337 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-10-22 23:44:48.359 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-22 23:44:48.359 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 538 ms
+2023-10-22 23:44:48.370 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-22 23:44:48.428 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-22 23:44:48.432 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:playerstat'
+2023-10-22 23:44:48.472 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-22 23:44:48.490 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-10-22 23:44:48.536 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-22 23:44:48.569 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-10-22 23:44:48.778 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-22 23:44:48.781 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-22 23:44:49.009 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-22 23:44:49.076 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4f81a1e4-e05e-4afb-a296-14de8c6af110
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-10-22 23:44:49.114 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7bb21d25, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44fa3af3, org.springframework.security.web.context.SecurityContextPersistenceFilter@2be6feb2, org.springframework.security.web.header.HeaderWriterFilter@3dd2e9a6, org.springframework.security.web.authentication.logout.LogoutFilter@1198e18d, sg.ntu.edu.simpleplayerstats.security.AuthenticationFilter@46a6173e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5a4cb76f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20832c42, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a05f699, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@703ed5dd, org.springframework.security.web.session.SessionManagementFilter@14d10c2f, org.springframework.security.web.access.ExceptionTranslationFilter@73b94185, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e6530c1]
+2023-10-22 23:44:49.158 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-22 23:44:49.223 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-10-22 23:44:49.233 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-22 23:44:49.325 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - Started SimplePlayerStatsApplication in 1.626 seconds (JVM running for 1.802)
+2023-10-22 23:44:53.349 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-22 23:44:53.540 [HikariPool-1 connection adder] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240)
+	at org.h2.engine.SessionLocal.transitionToState(SessionLocal.java:1232)
+	at org.h2.engine.SessionLocal.waitIfExclusiveModeEnabled(SessionLocal.java:1480)
+	at org.h2.command.Command.executeQuery(Command.java:180)
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538)
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-10-22 23:44:53.741 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-22 23:44:53.743 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-22 23:44:53.798 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

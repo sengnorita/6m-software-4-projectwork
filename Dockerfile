@@ -4,11 +4,21 @@ FROM maven:3.8.3-openjdk-17-slim
 # Set the working directory
 WORKDIR /app
 
-# Copy the Maven project
-COPY /home/circleci/.m2/repository/sg/ntu/edu/simple-player-stats/0.0.1-SNAPSHOT/simple-player-stats-0.0.1-SNAPSHOT.jar /app/app.jar
+# Copy the Maven project's pom.xml to the container
+COPY pom.xml .
 
-# # Build the Maven project
-# RUN mvn clean install
+# Download the project dependencies
+RUN mvn dependency:go-offline
+
+# Copy the rest of the application code to the container
+COPY src ./src
+
+# Build the Maven project
+RUN mvn package
 
 # Define the command to run your application
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "target/simple-player-stats-0.0.1-SNAPSHOT.jar"]
+
+
+
+

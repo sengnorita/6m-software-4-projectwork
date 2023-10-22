@@ -52,27 +52,6 @@ jobs:
           docker-image-name: $IMAGE_NAME
           severity-threshold: low  # Adjust the severity threshold as needed
           fail-on-issues: false
-      # - run:
-      #     name: Check Snyk Scan Results
-      #     command: |
-      #       if [ -s .snyk ]; then
-      #         cat .snyk
-      #       else
-      #         echo "No vulnerabilities found in Snyk scan."
-      #       fi
-      # - run:
-      #     name: Run Snyk Scan
-      #     command: |
-      #       snyk/test --all-projects --json > snyk-results.json  # Redirect the scan output to a file
-      # - run:
-      #     name: Check for Vulnerabilities
-      #     command: |
-      #       if grep -q '"vulnerabilities": \[\]' snyk-results.json; then
-      #         echo "No vulnerabilities found, continuing the build."
-      #       else
-      #         echo "Vulnerabilities found, but job will not fail."
-      #       fi
-
 
   # deploy:
   #   docker:

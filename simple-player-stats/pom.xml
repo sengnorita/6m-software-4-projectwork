@@ -96,7 +96,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>sg.ntu.edu.simple-player-stats</mainClass>
+					<mainClass>sg.ntu.edu.simpleplayerstats</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>

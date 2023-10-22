@@ -84,6 +84,10 @@ workflows:
           filters:
             branches:
               only: develop
+      - scan:
+          requires:
+            - build
+
   cicd_flow:
     jobs:
       - build:
@@ -102,6 +106,9 @@ workflows:
           filters:
             branches:
               only: release
+      - scan:
+          requires:
+            - build
 #       # - deploy:
 #       #     requires:
 #       #       - build-and-push

@@ -25,9 +25,9 @@ jobs:
           name: Build Maven Project
           command: mvn install
 
-    # docker-deploy:
-    # docker:
-    #   - image: docker:20.10.8
+  docker-deploy:
+    docker:
+      - image: docker:20.10.8
     
     # steps:
     #   - checkout

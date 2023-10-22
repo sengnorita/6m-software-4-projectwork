@@ -16,12 +16,43 @@ jobs:
       - checkout
       # - node/install-packages:
       #     pkg-manager: npm
-      - run: |
-          echo "Echo java versiong"
-          java --version
-          echo "Attempting to build"
-          mvn install 
+      # - run: |
+      #     echo "Echo java versiong"
+      #     java --version
+      #     echo "Attempting to build"
+      #     mvn install
+      - run:
+          name: Build Maven Project
+          command: mvn install
 
+    # docker-deploy:
+    # docker:
+    #   - image: docker:20.10.8
+    
+    # steps:
+    #   - checkout
+    #   - setup_remote_docker:
+    #       version: 20.10.8
+    #   - run:
+    #       name: Build and Push Docker Image
+    #       command: |
+    #         docker build -t my-java-app:latest .
+    #         docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+    #         docker tag my-java-app:latest your-docker-registry/my-java-app:latest
+    #         docker push your-docker-registry/my-java-app:latest
+
+  build-and-push:
+    executor: docker/docker
+    steps:
+      - setup_remote_docker
+      - checkout
+      - docker/check
+      - docker/build:
+          image: alf1650/software-4-projectwork
+          tag: <<pipeline.git.tag>>
+      - docker/push:
+          image: alf1650/software-4-projectwork
+          tag: <<pipeline.git.tag>>
   # test:
   #   docker:
   #     - image: cimg/node:16.10

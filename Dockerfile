@@ -5,7 +5,7 @@ FROM maven:3.8.3-openjdk-17-slim
 WORKDIR /app
 
 # Copy the Maven project
-COPY target/simple-player-stats-0.0.1-SNAPSHOT.jar /app/app.jar
+COPY /home/circleci/.m2/repository/sg/ntu/edu/simple-player-stats/0.0.1-SNAPSHOT/simple-player-stats-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # # Build the Maven project
 # RUN mvn clean install

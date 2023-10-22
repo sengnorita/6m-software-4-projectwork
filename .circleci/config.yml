@@ -102,16 +102,16 @@ jobs:
   #           heroku container:push web -a alf1650
   #           heroku container:release web -a alf1650
 
-# workflows:
-#   simple_workflow:
-#     jobs:
-#       - build
-#       - test:
-#           requires:
-#             - build
-#       - build-and-push:
-#           requires:
-#             - test
+workflows:
+  simple_workflow:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+      - build-and-push:
+          requires:
+            - test
 #       # - deploy:
 #       #     requires:
 #       #       - build-and-push

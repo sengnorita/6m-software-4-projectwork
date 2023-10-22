@@ -21,7 +21,6 @@ jobs:
           java --version
           echo "Attempting to build"
           mvn clean
-          mvn install
 
   # test:
   #   docker:

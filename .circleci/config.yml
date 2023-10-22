@@ -14,7 +14,7 @@ jobs:
       # - node/install-packages:
       #     pkg-manager: npm
       - run: |
-          echo "Echo java version"
+          echo "Echo java versiong"
           java --version
   # test:
   #   docker:

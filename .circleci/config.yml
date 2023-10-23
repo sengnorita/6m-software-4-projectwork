@@ -62,6 +62,11 @@ jobs:
       - heroku/install
       - checkout
       - run:
+          name: Set FORCE_SSL to false on Heroku
+          command: |
+            heroku config:set FORCE_SSL=false -a alf1650
+      
+      - run:
           name: Heroku Container Push
           command: |
             heroku container:login

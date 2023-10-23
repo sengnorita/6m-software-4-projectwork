@@ -53,7 +53,7 @@ jobs:
           docker-image-name: $IMAGE_NAME
           severity-threshold: low  # Adjust the severity threshold as needed
           fail-on-issues: false
-      timeout: 20m
+    timeout: 20m
 
   deploy:
     docker:

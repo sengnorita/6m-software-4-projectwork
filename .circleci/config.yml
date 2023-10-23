@@ -41,7 +41,6 @@ jobs:
   scan:
     docker: 
       - image: cimg/openjdk:17.0.8
-    resource_class: xlarge
     parallelism: 4
     environment:
       IMAGE_NAME: alf1650/software-4-projectwork
@@ -52,8 +51,9 @@ jobs:
       - run: docker build -t $IMAGE_NAME .
       - snyk/scan: 
           docker-image-name: $IMAGE_NAME
-          severity-threshold: critical  # Adjust the severity threshold as needed
+          severity-threshold: low  # Adjust the severity threshold as needed
           fail-on-issues: false
+        timeout: 20m
 
   deploy:
     docker:

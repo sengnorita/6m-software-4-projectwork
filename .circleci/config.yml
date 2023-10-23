@@ -53,19 +53,19 @@ jobs:
           severity-threshold: low  # Adjust the severity threshold as needed
           fail-on-issues: false
 
-  # deploy:
-  #   docker:
-  #     - image:  cimg/node:16.10
-  #   steps:
-  #     - setup_remote_docker
-  #     - heroku/install
-  #     - checkout
-  #     - run:
-  #         name: Heroku Container Push
-  #         command: |
-  #           heroku container:login
-  #           heroku container:push web -a alf1650
-  #           heroku container:release web -a alf1650
+  deploy:
+    docker:
+      - image: cimg/openjdk:17.0.8
+    steps:
+      - setup_remote_docker
+      - heroku/install
+      - checkout
+      - run:
+          name: Heroku Container Push
+          command: |
+            heroku container:login
+            heroku container:push web -a alf1650
+            heroku container:release web -a alf1650
 
 workflows:
   ci_flow:
@@ -111,7 +111,7 @@ workflows:
       - scan:
           requires:
             - build
-#       # - deploy:
-#       #     requires:
-#       #       - build-and-push
+      - deploy:
+          requires:
+            - build-and-push
 

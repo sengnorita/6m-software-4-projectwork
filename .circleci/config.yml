@@ -41,6 +41,7 @@ jobs:
   scan:
     docker: 
       - image: cimg/openjdk:17.0.8
+    parallelism: 4
     environment:
       IMAGE_NAME: alf1650/software-4-projectwork
     steps: 

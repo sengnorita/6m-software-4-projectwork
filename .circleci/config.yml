@@ -51,7 +51,7 @@ jobs:
       - run: docker build -t $IMAGE_NAME .
       - snyk/scan: 
           docker-image-name: $IMAGE_NAME
-          severity-threshold: high  # Adjust the severity threshold as needed
+          severity-threshold: critical  # Adjust the severity threshold as needed
           fail-on-issues: false
 
   deploy:

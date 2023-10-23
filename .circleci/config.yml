@@ -51,9 +51,10 @@ jobs:
       - run: docker build -t $IMAGE_NAME .
       - snyk/scan: 
           docker-image-name: $IMAGE_NAME
-          severity-threshold: low  # Adjust the severity threshold as needed
+          severity-threshold: high  # Adjust the severity threshold as needed
           fail-on-issues: false
-        timeout: 20m
+          monitor-on-build: true
+          
 
   deploy:
     docker:

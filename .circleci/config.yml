@@ -72,7 +72,6 @@ jobs:
             heroku container:login
             heroku container:push web -a alf1650
             heroku container:release web -a alf1650
-
 workflows:
   ci_flow:
     jobs:

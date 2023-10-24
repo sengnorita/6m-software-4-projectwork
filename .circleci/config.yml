@@ -32,17 +32,17 @@ jobs:
       - checkout
       - docker/check
       - docker/build:
-          image: alf1650/software-4-projectwork
+          image: sengnorita/software-4-projectwork
           tag: <<pipeline.git.tag>>
       - docker/push:
-          image: alf1650/software-4-projectwork
+          image: sengnorita/software-4-projectwork
           tag: <<pipeline.git.tag>>
 
   scan:
     docker: 
       - image: cimg/openjdk:17.0.8
     environment:
-      IMAGE_NAME: alf1650/software-4-projectwork
+      IMAGE_NAME: sengnorita/software-4-projectwork
     steps: 
       - checkout
       - setup_remote_docker
